@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="eureka-service" />
+        <module name="cudtomer-service" />
+        <module name="getway" />
+        <module name="inventory-service" />
+        <module name="billing-service (1)" />
+        <module name="billing-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="billing-service" target="1.8" />
+      <module name="billing-service (1)" target="1.8" />
+      <module name="cudtomer-service" target="1.8" />
+      <module name="eureka-service" target="17" />
+      <module name="getway" target="1.8" />
+      <module name="inventory-service" target="10" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="billing-service" options="-parameters" />
+      <module name="billing-service (1)" options="-parameters" />
+      <module name="cudtomer-service" options="-parameters" />
+      <module name="eureka-service" options="-parameters" />
+      <module name="getway" options="-parameters" />
+      <module name="inventory-service" options="-parameters" />
+    </option>
+  </component>
+</project>

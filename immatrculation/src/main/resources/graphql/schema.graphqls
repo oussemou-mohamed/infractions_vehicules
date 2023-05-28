@@ -1,0 +1,31 @@
+type Query{
+    vehicules : [Vehicule],
+    vehiculeById (id:String):Vehicule,
+    proprietaires : [Proprietaire]
+
+}
+
+type Proprietaire{
+    id:String,
+    date_naissance : String,
+    nom: String,
+    email: String
+}
+type Vehicule{
+    id : String,
+    num_matriculation : String,
+    marque : String,
+    puissance_fiscale :Int,
+    modele : String,
+    proprietaire : Proprietaire
+}
+type Mutation {
+    addAccount(bankAccount : BankAccountDTO) : Vehicule,
+    updateAccount(id : String, bankAccount :BankAccountDTO) : Vehicule,
+    deleteAccount(id : String) : Boolean
+}
+input BankAccountDTO{
+    balance : Float,
+    type : String
+    currency : String
+}
